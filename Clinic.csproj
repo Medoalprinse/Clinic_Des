@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D73D636E-24D6-41BD-995C-05B89D05607C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Clinic</RootNamespace>
+    <AssemblyName>Clinic</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8BDBC84C6FA8817E80351CB1E3B1E855485AA578</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Clinic_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClinicDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClinicDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClinicDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClinicDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\AddFamilyHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\AddFamilyHistory.Designer.cs">
+      <DependentUpon>AddFamilyHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\AddLabValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\AddLabValue.Designer.cs">
+      <DependentUpon>AddLabValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\AddNewFollowUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\AddNewFollowUp.Designer.cs">
+      <DependentUpon>AddNewFollowUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\AddNewLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\AddNewLab.Designer.cs">
+      <DependentUpon>AddNewLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\AddNewMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\AddNewMedicine.Designer.cs">
+      <DependentUpon>AddNewMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\AddNewVisit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\AddNewVisit.Designer.cs">
+      <DependentUpon>AddNewVisit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\AddPastHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\AddPastHistory.Designer.cs">
+      <DependentUpon>AddPastHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\Patient.Designer.cs">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\PrescriptionPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\PrescriptionPrint.Designer.cs">
+      <DependentUpon>PrescriptionPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Program.cs" />
+    <Compile Include="Froms\TransferDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\TransferDetails.Designer.cs">
+      <DependentUpon>TransferDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\TransferPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\TransferPrint.Designer.cs">
+      <DependentUpon>TransferPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\ViewLabs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\ViewLabs.Designer.cs">
+      <DependentUpon>ViewLabs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\Visits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\Visits.Designer.cs">
+      <DependentUpon>Visits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\EditFollowUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\EditFollowUp.Designer.cs">
+      <DependentUpon>EditFollowUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Froms\SelectPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\SelectPatient.Designer.cs">
+      <DependentUpon>SelectPatient.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Froms\AddFamilyHistory.resx">
+      <DependentUpon>AddFamilyHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\AddLabValue.resx">
+      <DependentUpon>AddLabValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\AddNewFollowUp.resx">
+      <DependentUpon>AddNewFollowUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\AddNewLab.resx">
+      <DependentUpon>AddNewLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\AddNewMedicine.resx">
+      <DependentUpon>AddNewMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\AddNewVisit.resx">
+      <DependentUpon>AddNewVisit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\AddPastHistory.resx">
+      <DependentUpon>AddPastHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\EditFollowUp.resx">
+      <DependentUpon>EditFollowUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Patient.resx">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\PrescriptionPrint.resx">
+      <DependentUpon>PrescriptionPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\TransferDetails.resx">
+      <DependentUpon>TransferDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\TransferPrint.resx">
+      <DependentUpon>TransferPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\ViewLabs.resx">
+      <DependentUpon>ViewLabs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\Visits.resx">
+      <DependentUpon>Visits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\SelectPatient.resx">
+      <DependentUpon>SelectPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PrescriptionReport.rdlc" />
+    <EmbeddedResource Include="Reports\TransferReport.rdlc" />
+    <None Include="ClinicDBDataSet.xsc">
+      <DependentUpon>ClinicDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClinicDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClinicDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClinicDBDataSet.xss">
+      <DependentUpon>ClinicDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClinicDBDataSet1.xsc">
+      <DependentUpon>ClinicDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ClinicDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClinicDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClinicDBDataSet1.xss">
+      <DependentUpon>ClinicDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Clinic_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClinicDB.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

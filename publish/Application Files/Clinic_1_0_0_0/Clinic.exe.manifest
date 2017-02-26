@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Clinic.exe" version="1.0.0.0" publicKeyToken="99a391ed0eccc039" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Clinic" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Clinic.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.DataVisualization" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.SqlServer.Types" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Clinic.exe" size="234496">
+      <assemblyIdentity name="Clinic" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aUYSSekMOc6QJae/K2jB2Vk/wuWW1l/T4m6c/6DABB0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Clinic.exe.config" size="514">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IYvxjN1wCaZ9oW0dL+qeoJWBagfzcmBkyDZ+6ADZdtA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SOLA\Shady" issuerKeyHash="301f4ee6149d7a83aa8d952048c2dbe9d2a1589c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>7jtTNMUaZPVkdhReoTt953Ng1hMxWyJTzANtXkCg0p0=</DigestValue></Reference></SignedInfo><SignatureValue>KgHpge5w+pvj/hF+g2lDx8SJEgRXKBvKYd+pld7pQ/EvJfy4rfZ+TPaUkgvnKYl2tQOFD1fbxxKCF3lFC9jn/fvFSf3RdTii/jCMtfxcdPYxAOOI5jTh7Szie0KP2d1JNXP2IfR11h0g6DEMLB9nxmamBQl8hg4baOfg0SRFJW0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>0LUTT8CikVktsFXOey2tgYp/hO5JWoqFP2x/nybqsm7JwIFguAKeKAJS5k2hInkzMnPKrnwZhYrc/aCrYD3699tN8PO/NauMCu4rOFcUmqMsycwUxT4MteroxnAMx3rBXrjKfaaAIsjhI4a8LXJoyiCbWnYLsyjCjLUGot1R4e8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9dd2a0405e6d03cc53225b3113d66073e77d3ba15e147664f5641ac534533bee" Description="" Url=""><as:assemblyIdentity name="Clinic.exe" version="1.0.0.0" publicKeyToken="99a391ed0eccc039" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SOLA\Shady</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>xDe43kORwURCr0s9LjOH/Tw+teaY0rKFtgNhFHmVfqM=</DigestValue></Reference></SignedInfo><SignatureValue>FZu6YkRJf2u3Sv9bH7BNGhIZUsi3ElVjJW3eB83n1yasGEiWDsiKn26PT8vmvLNbTnP1pJLrojcjH45l1tP/WejJAQk664A7VpjbgQcObAq11Kzrzs3bu2WriIRkRsYjL8D3WhPR0Y2CJscFHB4YHLhdNL0nYvgcfJHZo/W3/mw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>0LUTT8CikVktsFXOey2tgYp/hO5JWoqFP2x/nybqsm7JwIFguAKeKAJS5k2hInkzMnPKrnwZhYrc/aCrYD3699tN8PO/NauMCu4rOFcUmqMsycwUxT4MteroxnAMx3rBXrjKfaaAIsjhI4a8LXJoyiCbWnYLsyjCjLUGot1R4e8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQc3BVuB84nqlPul1Cj1Lg6zANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQAUwBPAEwAQQBcAFMAaABhAGQAeTAeFw0xNjEyMjgxNDEyMjBaFw0xNzEyMjgyMDEyMjBaMB8xHTAbBgNVBAMeFABTAE8ATABBAFwAUwBoAGEAZAB5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQtRNPwKKRWS2wVc57La2Bin+E7klaioU/bH+fJuqybsnAgWC4Ap4oAlLmTaEieTMyc8qufBmFitz9oKtgPfr3203w8781q4wK7is4VxSaoyzJzBTFPgy16ujGcAzHesFeuMp9poAiyOEjhrwtcmjKIJtadguzKMKMtQai3VHh7wIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAJSNSiu8J4E7BXXAIRaRaG3gpODOOvjd3ejwxhnSRBW3Qo79XtcJOqw7DpDo/Xl9pCgQfpHm4UTYfrbXgmy4gP6pwRWi6ADoetGxgYca8LT2Nig/jfzJb6/ycjtFQQQIqTRSnIG38r06gPLXs/1sPsdvXpaD1qs1R1ayf1HgvseV</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
